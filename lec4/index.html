@@ -4,10 +4,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Table</title>
 </head>
 
 <body>
+
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th rowspan="2">Item</th>
+        <th colspan="2">Product</th>
+        <th rowspan="2">Total</th>
+      </tr>
+      <tr>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Twix</td>
+        <td>4</td>
+        <td>2.5</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>CocaCola</td>
+        <td>3</td>
+        <td>3.3</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total</th>
+        <th>20</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <hr>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Level 1</th>
+        <th>Level 2</th>
+        <th>Level 3</th>
+        <th>Info</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="6">System</td>
+        <td rowspan="4">System Apps</td>
+        <td rowspan="3">System Env</td>
+        <td>App Test</td>
+        <td>foo</td>
+      </tr>
+      <tr>
+        <td>App Memory</td>
+        <td>foo</td>
+      </tr>
+      <tr>
+        <td>App Test</td>
+        <td>bar</td>
+      </tr>
+      <tr>
+        <td>System Env 2</td>
+        <td>App Test</td>
+        <td>bar</td>
+      </tr>
+      <tr>
+        <td rowspan="2">System Memory</td>
+        <td rowspan="2">Memory Test</td>
+        <td>Memory Func</td>
+        <td>foo</td>
+      </tr>
+      <tr>
+        <td>App Test</td>
+        <td>foo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Header Column 1</th>
+        <th>Header Column 2</th>
+        <th>Header Column 3</th>
+        <th>Header Column 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 2 - Item 1</td>
+        <td>Row 2 - Item 2</td>
+        <td rowspan="2">
+          <b>Row 2 - Item 3</b>
+          <br>
+          <table border="1">
+            <tbody>
+              <tr>
+                <th>Row 1 Header</th>
+                <td>Item</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Item</td>
+              </tr>
+              <tr>
+                <th>Row 3 Header</th>
+                <td>Item</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>Row 2 - Item 4</td>
+      </tr>
+      <tr>
+        <td>Row 3 - Item 1
+          <table border="1">
+            <tbody>
+              <tr>
+                <th>Row 1 Header</th>
+                <td>Item</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Item</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>Row 3 - Item 3</td>
+        <td rowspan="2">Row 3 - Item 3</td>
+      </tr>
+      <tr>
+        <td>Row 4 - Item 1</td>
+        <td>Row 4 - Item 3</td>
+        <td>Row 4 - Item 3</td>
+      </tr>
+      <tr>
+        <td colspan="5">Row 5 - Last item in table</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 

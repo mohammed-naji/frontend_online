@@ -1,0 +1,41 @@
+/* h2 {
+  color: blueviolet;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+#link.btn {
+  color: red;
+}
+
+p.btn {
+  color: blue;
+} */
+
+/* div>p {
+  color: blue;
+} */
+
+/* .box { */
+/* background-color: lightblue; */
+/* background-color: rgb(76, 145, 214); */
+/* background-color: rgba(76, 145, 214, 0.5); */
+/* background-color: #45782b;
+  height: 200px; */
+/* } */
+
+.btn {
+  background-color: #9103b4;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #05c9a5;
+}

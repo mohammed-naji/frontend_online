@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'JF Flat';
+  src: url(../fonts/JF-Flat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Mohammed';
+  src: url(../fonts/KAHandNaskhMOBV2-Regular.ttf);
+}
+
+body {
+  font-family: 'Mohammed', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'JF Flat', sans-serif;
+  color: #333;
+}

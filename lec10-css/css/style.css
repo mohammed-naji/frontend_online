@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  height: 3000px;
+  /* padding-top: 100px; */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 
+* Position
+1. static
+2. fixed
+3. sticky
+4. absolute
+5. relative 
+*/
+
+header {
+  background-color: #eee;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+}
+
+header .logo a img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.hero {
+  height: 600px;
+  background-image: url('../images/2048.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.hero h1 {
+  position: relative;
+}
+
+
+
+.back-top {
+  width: 50px;
+  height: 50px;
+  background-color: #007faa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+.back-top:hover {
+  background-color: #005f7a;
+}
+
+.menu-list {
+  background-color: #9f9f9f;
+}
+
+.menu-list .categories {
+  position: sticky;
+  top: 0;
+  background-color: #016aac;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  color: #fff;
+}
+
+.product-box {
+  width: 30%;
+  margin: 30px 0;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.product-box .info {
+  padding: 10px;
+}
+
+.product-box .info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.product-box .info a {
+  text-decoration: none;
+  background-color: #007faa;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.product-box .info a:hover {
+  background-color: #005f7a;
+}
+
+.product-box .price {
+  background-color: #960293;
+  color: #fff;
+  padding: 2px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+
+.our-team {
+  padding: 60px 0;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.our-team h2 {
+  margin-bottom: 40px;
+}
+
+.our-team .team-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.our-team .team-wrapper img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.our-team .team-wrapper .team-member:hover img {
+  transform: scale(1.1) rotate(3deg);
+  filter: grayscale(0%);
+}
+
+.our-team .team-wrapper .team-member .image {
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .team-wrapper .team-member {
+  width: 33%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.our-team .team-wrapper .team-member .info {
+  padding: 20px;
+}
+
+.our-team .team-wrapper .team-member .info h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.our-team .team-wrapper .team-member .info h6 {
+  margin: 15px 0 0;
+  font-size: 16px;
+  color: #696969;
+  font-style: italic;
+}
+
+.our-team .team-wrapper .team-member .info p {
+  margin: 15px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.team-member .social a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  background-color: #007faa;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+  transition: all 0.3s ease;
+  opacity: .7;
+}
+
+.team-member .social a:hover {
+  opacity: 1;
+}
+
+.team-member .social a.fb {
+  background-color: #3b5998;
+}
+
+.team-member .social a.x {
+  background-color: #14171a;
+}
+
+.team-member .social a.li {
+  background-color: #0a66c2;
+}
+
+.team-member .social a.in {
+  background-color: #c32aa3;
+}
+
+.team-member .social {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover .social {
+  right: 0;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-wrapper {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 2fr 6fr 3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: #003e6a;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.links ul a:hover {
+  background-color: #f3f3f3;
+}
+
+.posts {
+  display: grid;
+  gap: 40px;
+}
+
+.posts .post img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.posts .post .post-info {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+  color: #4d4d4d;
+}
+
+.posts .post .post-info i {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.posts .post p span {
+  display: none;
+}
+
+.posts .post p button {
+  background: none;
+  border: none;
+  color: #003e6a;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+.posts .post p button:hover {
+  text-decoration: underline;
+}
+
+.ads .ads-blocks {
+  display: grid;
+  gap: 20px;
+}
+
+.ads .ads-blocks a {
+  display: block;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+  border: 1px solid #003e6a;
+}
+
+.ads .ads-blocks a:hover {
+  background-color: #f3f3f3;
+}

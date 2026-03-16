@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registration</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>تسجيل بيانات مستفيد جديد</h1>
+    <form action="">
+      <h3> معلومات رب الاسرة </h3>
+      <div class="father-info">
+        <div>
+          <label for="name"> الاسم </label>
+          <input type="text" name="name" id="name">
+        </div>
+
+        <div>
+          <label for="father"> اسم الاب </label>
+          <input type="text" name="father" id="father">
+        </div>
+
+        <div>
+          <label for="grandfather"> اسم الجد </label>
+          <input type="text" name="grandfather" id="grandfather">
+        </div>
+
+        <div>
+          <label for="family"> العائلة </label>
+          <input type="text" name="family" id="family">
+        </div>
+
+        <div>
+          <label for="id"> رقم الهوية </label>
+          <input type="text" name="id" id="id">
+        </div>
+
+        <div>
+          <label for="phone"> رقم الهاتف </label>
+          <input type="text" name="phone" id="phone">
+        </div>
+
+        <div>
+          <label for="another_phone"> رقم هاتف بديل </label>
+          <input type="text" name="another_phone" id="another_phone">
+        </div>
+      </div>
+
+      <h3> معلومات الزوجة </h3>
+      <div class="mother-info">
+        <div>
+          <label for="wname"> الاسم </label>
+          <input type="text" name="wname" id="wname">
+        </div>
+
+        <div>
+          <label for="wfather"> اسم الاب </label>
+          <input type="text" name="wfather" id="wfather">
+        </div>
+
+        <div>
+          <label for="wgrandfather"> اسم الجد </label>
+          <input type="text" name="wgrandfather" id="wgrandfather">
+        </div>
+
+        <div>
+          <label for="wfamily"> العائلة </label>
+          <input type="text" name="wfamily" id="wfamily">
+        </div>
+
+        <div>
+          <label for="wid"> رقم الهوية </label>
+          <input type="text" name="wid" wid="id">
+        </div>
+
+      </div>
+
+      <h3> معلومات الابناء </h3>
+      <label><input type="checkbox" id="have_children"> لديك ابناء</label>
+      <div class="children-info">
+        <div class="children-wrapper">
+          <div class="child">
+            <h3>الابن #1</h3>
+            <div>
+              <label for="c1name"> الاسم </label>
+              <input type="text" name="c1name" id="c1name">
+            </div>
+            <div>
+              <label for="c1id"> رقم الهوية </label>
+              <input type="text" name="c1id" id="c1id">
+            </div>
+            <div>
+              <label for="c1age"> العمر </label>
+              <input type="text" name="c1age" id="c1age">
+            </div>
+          </div>
+        </div>
+        <button class="add-child" type="button"><i class="fas fa-plus"></i></button>
+
+      </div>
+
+      <button class="register">تسجيل</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
